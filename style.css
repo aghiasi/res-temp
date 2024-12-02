@@ -30,7 +30,7 @@ nav{
     justify-content: center;
 }
 nav .svg-countainer{
-    background-color: #588579;
+    background-color: #00afb9;
     display: flex;
     width:60px;
     height: 60px;
@@ -60,7 +60,7 @@ nav .svg-countainer img {
     margin: auto;
 }
 nav .flag-countainer{
-    background-color: #588579;
+    background-color: #00afb9;
     position: relative;
     border-radius: 40px;
     height: 60px;
@@ -141,7 +141,7 @@ nav .li-flag{
     margin: 0;
 }
 .head-container{
-	background-color: rgba(88, 133, 121 , 0.5);
+	background-color: #00b0b970;
 	width: max-content;
 	margin: 20px auto;
     padding: 0 10px;
@@ -162,12 +162,12 @@ nav .li-flag{
     width: fit-content;
 }
 .menu{
-background-color: #58857973;
+background-color: #00b0b96b;
 width: 99%;
 margin: 0 auto;
 padding-top: 1px;
 border-radius: 15px;
-margin-top:300px ;
+margin-top:600px ;
 backdrop-filter: blur(8px);
 }
 .open-menu{
@@ -232,10 +232,22 @@ section{
     .li-flag{
         width: 80%;
     }
+    .search-form{
+        width: 40%;
+    }
+    .menu{
+        margin-top: 750px;
+    }
 }
 @media screen and (min-width:801px) {
     .li-flag{
         width: 90%;
+    }
+    .search-form{
+        width: 20%;
+    }
+    .menu{
+        margin-top: 650px;
     }
 }
 aside{
@@ -284,7 +296,6 @@ aside{
 .search-form{
     margin: auto;
     border-radius: 40px;
-    width: 40%;
     border: 2px solid #3b5f56 ;
     padding: 3px 0;
     background-color: #588579;
@@ -292,4 +303,32 @@ aside{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+}
+.card-section{
+    top: 450px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow-x: hidden;
+}
+.card{
+    background-color: #00b0b96b;
+    color: #ffffff;
+    width: 400px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-left: 5px;
+    border-radius: 20px;
+    & *{
+        direction: rtl;
+    }
+    & img {
+        max-width: 200px;
+        max-height: 200px;
+        border-radius: 20px;
+        margin-left: 10px;
+    }
 }
